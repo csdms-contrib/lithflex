@@ -16,6 +16,7 @@ lithflex2: lithflex2.f
 dist:
 	@mkdir lithflex-${VERSION}
 	@cp ${SOURCES} lithflex-${VERSION}
+	@cp Makefile lithflex-${VERSION}
 	@tar cvfz lithflex-${VERSION}.tar.gz lithflex-${VERSION} 
 	@rm -rf lithflex-${VERSION}
 
